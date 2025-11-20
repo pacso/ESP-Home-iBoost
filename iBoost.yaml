@@ -121,7 +121,7 @@ sensor:
 
     heating_boost_time:
       name: "iBoost Boost Time Remaining"
-      unit_of_measurement: "Min"
+      unit_of_measurement: "min"
       accuracy_decimals: 0
       device_class: duration
       icon: "mdi:solar-power"
