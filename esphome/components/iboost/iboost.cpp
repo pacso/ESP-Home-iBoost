@@ -47,8 +47,7 @@ SOFTWARE.
 namespace esphome {
     namespace iboost {
 
-        // Global instance
-        iBoost * global_iboost = nullptr;
+
 
         enum { // codes for the various requests and responses
             SAVED_TODAY = 0xCA,
@@ -97,12 +96,6 @@ namespace esphome {
         char pbuf[32];
         byte boostTime;
         bool waterHeating, cylinderHot, batteryLow, overheat;
-
-        // Register component
-        void register_iboost() {
-            global_iboost = new iBoost();
-            App.register_component(global_iboost);
-        }
 
         void iBoost::setup() {
             // Initialize text sensors

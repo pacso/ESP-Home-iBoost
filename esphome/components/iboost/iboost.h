@@ -139,7 +139,6 @@ private:
 
 
 };
-extern iBoost *global_iboost;  // Declare global instance of iBoost
 }  // namespace iboost
 }  // namespace esphome
 #endif
